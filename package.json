@@ -1,0 +1,32 @@
+{
+  "name": "ng2-components",
+  "version": "0.1.1",
+  "description": "Angular 2 Component Library",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install rimraf typescript tsc -g",
+    "build": "rimraf -rf lib && tsc -p src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisMurphy/ng2-components.git"
+  },
+  "keywords": [
+    "angular2",
+    "component"
+  ],
+  "author": "Chris Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisMurphy/ng2-components/issues"
+  },
+  "homepage": "https://github.com/ChrisMurphy/ng2-components#readme",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.3",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.11"
+  }
+}
