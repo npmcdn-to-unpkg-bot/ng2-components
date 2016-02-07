@@ -1,8 +1,8 @@
 {
   "name": "ng2-components",
-  "version": "0.3.0-0",
+  "version": "1.0.0",
   "description": "Angular 2 Component Library",
-  "main": "index.js",
+  "main": "components.js",
   "scripts": {
     "setup": "npm install rimraf typescript tsc -g",
     "build": "rimraf -rf lib && tsc -p src"
