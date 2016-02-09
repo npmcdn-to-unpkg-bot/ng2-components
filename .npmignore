@@ -1,2 +1,11 @@
+.gitignore
+.npmignore
+coverage
+components.ts
+karma-test-shim.js
+karma.conf.js
 node_modules
-src
+test
+tsd.json
+typings
+tsconfig.json

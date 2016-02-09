@@ -5,7 +5,11 @@
   "main": "components.js",
   "scripts": {
     "setup": "npm install rimraf typescript tsc -g",
-    "build": "rimraf -rf lib && tsc -p src"
+    "build": "tsc",
+    "pretest": "npm run build",
+    "test": "karma start karma.conf.js",
+    "posttest": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html",
+    "coverage": "http-server -c-1 -o -p 9875 ./coverage"
   },
   "repository": {
     "type": "git",
@@ -16,7 +20,7 @@
     "component"
   ],
   "author": "Chris Murphy",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ChrisMurphy/ng2-components/issues"
   },
@@ -28,5 +32,16 @@
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.0",
     "zone.js": "0.5.11"
+  },
+  "devDependencies": {
+    "http-server": "^0.8.5",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.3",
+    "karma-jasmine": "^0.3.7",
+    "remap-istanbul": "^0.5.1",
+    "systemjs": "^0.19.20",
+    "typescript": "^1.7.5"
   }
 }

@@ -1,2 +1,13 @@
-lib
+coverage
+components.d.ts
+components.js
+components.js.map
 node_modules
+npm-debug.log
+src/**/*.d.ts
+src/**/*.map
+src/**/*.js
+test/**/*.d.ts
+test/**/*.map
+test/**/*.js
+typings/**/*.*

@@ -18,6 +18,5 @@ export class HelloWorld {
     onClick() {
         this.message = "Hello World!";
         console.log(this.message);
-
     }
 }
