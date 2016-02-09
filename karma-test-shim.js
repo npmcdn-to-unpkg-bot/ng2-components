@@ -16,7 +16,7 @@ System.config({
     },
     meta: {
         'src/*': {
-            format: 'register'
+            format: 'cjs'
         }
     }
 });

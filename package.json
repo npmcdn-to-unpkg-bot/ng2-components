@@ -7,9 +7,12 @@
     "setup": "npm install rimraf typescript tsc tsd -g",
     "postinstall": "tsd install",
     "build": "tsc",
-    "pretest": "npm run build",
+    "pretest": "rimraf coverage && npm run build",
     "test": "karma start karma.conf.js",
-    "posttest": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html",
+    "posttest": "npm run remaphtml && npm run remaplcov",
+    "remaphtml": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html",
+    "remaplcov": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage/lcov.info -t lcovonly",
+    "coveralls": "node_modules/.bin/coveralls < coverage/lcov.info",
     "coverage": "http-server -c-1 -o -p 9875 ./coverage"
   },
   "repository": {
@@ -35,6 +38,7 @@
     "zone.js": "0.5.11"
   },
   "devDependencies": {
+    "coveralls": "^2.11.6",
     "http-server": "^0.8.5",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.19",
