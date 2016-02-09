@@ -4,7 +4,8 @@
   "description": "Angular 2 Component Library",
   "main": "components.js",
   "scripts": {
-    "setup": "npm install rimraf typescript tsc -g",
+    "setup": "npm install rimraf typescript tsc tsd -g",
+    "postinstall": "tsd install",
     "build": "tsc",
     "pretest": "npm run build",
     "test": "karma start karma.conf.js",
