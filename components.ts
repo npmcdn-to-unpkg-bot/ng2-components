@@ -1,3 +1,3 @@
-import {HelloWorld} from './src/hello-world.ts';
+import {HelloWorld} from './src/hello-world';
 
 export {HelloWorld};
