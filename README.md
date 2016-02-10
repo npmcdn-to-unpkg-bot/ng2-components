@@ -5,9 +5,15 @@
 [![npm version](https://badge.fury.io/js/ng2-components.svg)](https://badge.fury.io/js/ng2-components)
 [![Dependency Status](https://david-dm.org/ChrisMurphy/ng2-components.svg)](https://david-dm.org/ChrisMurphy/ng2-components)
 
-npm install ng2-components
+## Install via NPM 
 
-[Catalogue][gh-pages]
+```bash
+npm install ng2-components
+```
+
+## Example Usage
+
+[Examples][gh-pages]
 
 [gh-pages]: http://chrismurphy.github.io/ng2-components/
 [comment]: https://www.tomsdev.com/blog/2015/tsd-travis-ci-github-rate-limit-reached/
