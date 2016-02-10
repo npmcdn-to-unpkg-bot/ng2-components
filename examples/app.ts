@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {HelloWorld} from 'ng2-components/components';
+import {HelloWorld} from '../src/hello-world/hello-world';
 
 @Component({
   selector: 'app',
