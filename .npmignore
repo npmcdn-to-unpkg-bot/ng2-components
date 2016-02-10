@@ -1,7 +1,10 @@
+.vscode
 .gitignore
 .npmignore
+.travis.yml
 coverage
 components.ts
+deploy.sh
 karma-test-shim.js
 karma.conf.js
 node_modules

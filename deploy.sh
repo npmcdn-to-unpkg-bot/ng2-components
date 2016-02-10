@@ -17,6 +17,7 @@ mkdir out;
  echo "Copying required files"
  cp ../index.html ./index.html
  cp -r ../coverage ./coverage
+ cp -r ../examples ./examples
  git add .
  git commit -m "Regenerated static content for $CURRENT_COMMIT" || exit 1
  echo "Pushing new content to $ORIGIN_URL"
