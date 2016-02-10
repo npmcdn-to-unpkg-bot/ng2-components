@@ -1,14 +1,17 @@
 language: node_js
 node_js:
-  - "4.2.3"
+- 4.2.3
 before_install:
-  - npm run setup
-  - export CHROME_BIN=/usr/bin/google-chrome
-  - export DISPLAY=:99.0 
-  - sh -e /etc/init.d/xvfb start
-  - sudo apt-get update
-  - sudo apt-get install -y libappindicator1 fonts-liberation
-  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-  - sudo dpkg -i google-chrome*.deb
+- npm run setup
+- export CHROME_BIN=/usr/bin/google-chrome
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- sudo apt-get update
+- sudo apt-get install -y libappindicator1 fonts-liberation
+- wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+- sudo dpkg -i google-chrome*.deb
 after_script:
-  - npm run coveralls
+- npm run coveralls
+env:
+  global:
+    secure: xSc13Se68W/FnCOPkhH1t4QJQvvfuepFmkVN9mVxJmiw/ppj0jlKhpQ7+s/27ubXnaQqGwFSy9R8YeZU2dwK6+LVjXTp754LLyHUj/NrtmLmwOQ+/b7rSdjMDME8rWYfh3cqvEi/ExsGk4Vv8DnsJGHiRPulBSWmj+mL6k6T5wxc0NAKBTKaBSYYjjASKJPMF0S2+asItHnWAvCqJaH0w0rJM6jgIbQJf51rvEDtK/gsStyvIuSegsp4GzkMv8vQIn5sJ1jieSUE9gdXGAH7o7Kjpqoj7lbj35Lc11tXMezMbBcQBvlhxNaO1QqEZoDjPif31t3p5tR2iBqdhIhlYDu0cOnGBWpTfhlVzf819y5rS8IBF1YnoyOsN4k24k2dtSOnvhM2wdSh4zsf3egUW0LZwDmZ5wr1gwespJkOCSkspUQQTk+Cb4DK6t+eUnSN7P3wl92F8DCqrP2RptRKjiekLIKvaBN26j7JE6X5Jstl5NoLJxsZxs1i9nu/tGS3O95OBstwQsgDvPXxOQADSUBL0tlXs8U2KFCigV/wsqnXzezGQKcUx2HQjB60dhrzHFJyKLurb3APv45g75j9E9yE+mQJisY8Uk8G363y4o+g+d0RewhK3ghOLSA6t2No8rtuQYw1CwKH1MCHmzgOg87zjNFQ4RFYgTIM4HlbD9U=
