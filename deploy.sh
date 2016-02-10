@@ -16,6 +16,7 @@ mkdir out;
  git config user.email "monkeeman69@googlemail.com" || exit 1
  echo "Copying required files"
  cp ../index.html ./index.html
+ cp -r ../coverage ./coverage
  git add .
  git commit -m "Regenerated static content for $CURRENT_COMMIT" || exit 1
  echo "Pushing new content to $ORIGIN_URL"
