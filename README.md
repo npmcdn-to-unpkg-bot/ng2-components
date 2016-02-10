@@ -7,5 +7,8 @@
 
 npm install ng2-components
 
+[Catalogue][gh-pages]
+
+[gh-pages]: http://chrismurphy.github.io/ng2-components/
 [comment]: https://www.tomsdev.com/blog/2015/tsd-travis-ci-github-rate-limit-reached/
 [comment]: http://blog.500tech.com/setting-up-travis-ci-to-run-tests-on-latest-google-chrome-version/
