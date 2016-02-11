@@ -11,7 +11,7 @@
 npm install ng2-components
 ```
 
-## Use
+## Example Usage
 
 ```javascript
 import {Component} from 'angular2/core';
@@ -28,9 +28,9 @@ export class SomeComponent {
 }
 ```
 
-## Live Examples
+## Demo
 
-[Examples][gh-pages]
+[Demo][gh-pages]
 
 [gh-pages]: http://chrismurphy.github.io/ng2-components/
 [comment]: https://www.tomsdev.com/blog/2015/tsd-travis-ci-github-rate-limit-reached/
