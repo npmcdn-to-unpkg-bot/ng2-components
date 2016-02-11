@@ -18,6 +18,7 @@ mkdir out;
  cp ../index.html ./index.html
  cp -r ../coverage ./coverage
  cp -r ../examples ./examples
+ cp -r ../src ./src
  git add .
  git commit -m "Regenerated static content for $CURRENT_COMMIT" || exit 1
  echo "Pushing new content to $ORIGIN_URL"
