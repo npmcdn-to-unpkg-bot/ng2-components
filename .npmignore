@@ -1,3 +1,5 @@
+*.deb
+src/**/*.spec.*
 .vscode
 .gitignore
 .npmignore
