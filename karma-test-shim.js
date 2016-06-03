@@ -15,18 +15,22 @@ System.config({
         'rxjs': 'node_modules/rxjs'
     },
     packages: {
-        '@angular/core': {
+        '@angular/common': {
             main: 'index.js',
             defaultExtension: 'js'
-        },
+        },        
         '@angular/compiler': {
             main: 'index.js',
             defaultExtension: 'js'
         },
-        '@angular/common': {
+        '@angular/core': {
             main: 'index.js',
             defaultExtension: 'js'
         },
+        '@angular/http': {
+            main: 'index.js',
+            defaultExtension: 'js'
+        },        
         '@angular/platform-browser': {
             main: 'index.js',
             defaultExtension: 'js'
@@ -35,14 +39,6 @@ System.config({
             main: 'index.js',
             defaultExtension: 'js'
         },
-        // '@angular/router-deprecated': {
-        //   main: 'index.js',
-        //   defaultExtension: 'js'
-        // },
-        // '@angular/router': {
-        //   main: 'index.js',
-        //   defaultExtension: 'js'
-        // },
         'rxjs': {
             defaultExtension: 'js'
         }
