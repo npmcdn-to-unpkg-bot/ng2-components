@@ -28,20 +28,34 @@ module.exports = function (config) {
         },
 
         files: [
-            'node_modules/angular2/bundles/angular2-polyfills.js',
-        // 'node_modules/zone.js/dist/zone-microtask.js',
-        // 'node_modules/zone.js/dist/long-stack-trace-zone.js',
-        // 'node_modules/zone.js/dist/jasmine-patch.js',
-        // 'node_modules/es6-module-loader/dist/es6-module-loader.js',
-            'node_modules/systemjs/dist/system.src.js',
-            'node_modules/reflect-metadata/Reflect.js',
-            'karma-test-shim.js',
+            // Polyfills.
+            'node_modules/es6-shim/es6-shim.js',
 
-            { pattern: 'node_modules/angular2/**/*.js', included: false, watched: false },
+            'node_modules/reflect-metadata/Reflect.js',
+
+            // System.js for module loading
+            'node_modules/systemjs/dist/system-polyfills.js',
+            'node_modules/systemjs/dist/system.src.js',
+
+            // Zone.js dependencies
+            'node_modules/zone.js/dist/zone.js',
+            'node_modules/zone.js/dist/jasmine-patch.js',
+            'node_modules/zone.js/dist/async-test.js',
+            'node_modules/zone.js/dist/fake-async-test.js',
+
+            // RxJs.
             { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
+            { pattern: 'node_modules/rxjs/**/*.js.map', included: false, watched: false },
+
+            { pattern: 'karma-test-shim.js', included: true, watched: true },
+
+            // paths loaded via module imports
+            // Angular itself
+            { pattern: 'node_modules/@angular/**/*.js', included: false, watched: true },
+            { pattern: 'node_modules/@angular/**/*.js.map', included: false, watched: true },
+
             { pattern: 'src/**/*.js', included: false, watched: true },
             { pattern: 'test/test-helpers/*.js', included: false, watched: true },
-            { pattern: 'node_modules/systemjs/dist/system-polyfills.js', included: false, watched: false },
 
             // paths loaded via Angular's component compiler
             // (these paths need to be rewritten, see proxies section)
