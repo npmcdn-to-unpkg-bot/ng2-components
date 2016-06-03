@@ -14,7 +14,7 @@ npm install ng2-components
 ## Example Usage
 
 ```javascript
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {HelloWorld} from 'ng2-components/components';
 
 @Component({
