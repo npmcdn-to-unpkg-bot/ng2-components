@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+import {Component} from '@angular/core';
+import {Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
 
 import {HelloWorldExamples} from './hello-world';
 
@@ -9,7 +9,7 @@ import {HelloWorldExamples} from './hello-world';
     <div class="flexbox-container">
         <div class="flexbox-container__column">
             <ul>
-                <li><a [routerLink]="['HelloWorld']">Hello World</a></li>
+                <li><a [routerLink]="['helloworld']">Hello World</a></li>
                 <li><a href="./coverage">Test Coverage Report</a></li>
             </ul>
         </div>
@@ -29,8 +29,8 @@ import {HelloWorldExamples} from './hello-world';
   `],
   directives: [ROUTER_DIRECTIVES]
 })
-@RouteConfig([
-  { path: '/helloworld', name: 'HelloWorld', component: HelloWorldExamples }
+@Routes([
+  { path: '/helloworld', component: HelloWorldExamples }
 ])
 
 export class App {
